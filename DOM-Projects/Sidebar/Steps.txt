@@ -1,0 +1,26 @@
+Html
+
+1 -button.sidebar-toggle
+	fas fa -bars
+
+2- aside.sidebar
+	1-.sidebar-header	
+		img.logo
+		button.close-btn
+
+	2-ul.links
+		li>a>i
+	3-ul.social-links
+		li>a>i
+
+
+CSS
+
+.sidebar-toggle - pos-fixed , top,left, animation(if want),
+.sidebar- transform-translateX(-100%)
+.show-sideNav -  transform-translateX(0)
+
+
+JS
+.sidebar-toggle-classlist.toggle(show-sidenav)
+.closeBtn - remove-classList("shiw-sidenav)

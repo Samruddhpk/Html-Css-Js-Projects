@@ -1,0 +1,35 @@
+Index.html - font awesome for icons - prev and next
+
+main
+  section.container
+	.title
+		h2 - our reviews
+		.underline
+	article.review
+		img-container
+			img#person-img
+		h4#author - name
+		p#job - job
+		p#info -info
+
+		.btn-container
+			prev-btn
+			next-btn
+
+		.random-btn
+
+
+App.js
+
+1-local data  - reviews []
+2-select elements - person-img,author,job,info,prev,next,random btns
+3-counter var = currentItem =0
+4-event-window-domcontent- const item = reviews[currentItem] - to display first item form array when page loads
+5-set all the properties to reviews object props - ex - img.src=item.img etc
+6-function showPerson(person)-reviews[person]- same set props - person from next and prev currentItem
+7-event-nextBtn-currentItem++-check condition - currentItem>review length-1 - currentItem=0-showPerson(currentItem)
+8-event-prevBtn-curItem-- - curitem<0-curItem=review.length-1-showperson(curritem)
+9-event-random-currItem= math.random*review.length-showperson(curitem)
+
+CSS
+img-container- pos(rel)-before and after -pos(abs)

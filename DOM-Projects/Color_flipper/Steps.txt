@@ -1,0 +1,40 @@
+Project with two types of values  - hex and normal color formats
+
+index.html
+
+HTML 
+
+1.Nav
+	.Nav-center
+		h4
+		ul.nav-links
+			li  -  a (2) - index.html & hex.html
+			
+2.container	
+	h2 : background color - span.color - #f1f5f8
+	button.btn#btn - click me			
+
+Hex.html - with same elements as index
+
+Simple.js
+
+1.elements to target - btn , color
+2.array with some colors 
+3.add event on btn and run a function - randomNumber =  getRandomnumber()
+4.change document.body.style.bgcolor = arr[randomNumber]
+5.change textxontent = arr[randomNumber]
+
+6.getRandomNumber function () - returning Math.random() * arr.length
+7.floor it to get nearest int - Math.floor( Math...)
+
+
+hex.js
+
+1.select same elements
+2.arr with [0-9, A-F]
+3.add event on btn and run a function - randomNumber =  getRandomnumber()
+4.create var hexColor = "#"
+5.run the loop till i<6 - hex value holds 6
+6.in loop hexColor = hexColor + hex[getRandomNumber()]
+7.change elements- body,text - hexColor
+8.same func - to get randomNumber

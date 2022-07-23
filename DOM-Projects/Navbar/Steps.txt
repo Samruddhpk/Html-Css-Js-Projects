@@ -1,0 +1,34 @@
+MORE OF CSS SETUP
+
+Html
+
+nav
+  nav-center	
+	nav-header
+		img.logo
+		button.nav-toggle-fa icon
+	
+	ul.links
+		li>a-home - 4*
+
+	ul.social-icons
+		li>a>icons - 5*
+
+CSS - toggle class
+	show-links - height -10rem - hardcoding- 
+	
+	by default:
+	links-height:0
+		overflow:hidden
+	social-links-display:none
+	
+@media min-width:800px
+	links-height-auto -display:flex
+	social-links-display:flex		
+		
+	
+*to get height dynamically - getBoundingClientRect()
+
+app.js
+1-select elements- nav-toggle & links
+2.event - links.clslist.toggle("show-links")

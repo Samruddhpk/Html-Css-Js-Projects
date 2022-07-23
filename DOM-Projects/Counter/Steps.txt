@@ -1,0 +1,23 @@
+Html
+
+main
+  .container
+	h1
+	span#value
+	btn-container
+		btn decrease
+		btn reset 
+		btn increase
+	
+
+js
+
+1.set count=0
+2 select all buttons - queryall
+3 iterate over them - foreach()-
+4 add event on each button 
+5 get currentTarget classList
+6 if(target.contains(classList))
+7 count--,count++,count=0
+8 change color of value - if(count<0)-red ,>0 -green,=0 black
+9.value.textContent =count
